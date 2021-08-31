@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		3A22084426DE37560053B9ED /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22084326DE37560053B9ED /* AppDelegate.swift */; };
 		3A22084626DE37560053B9ED /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22084526DE37560053B9ED /* SceneDelegate.swift */; };
-		3A22084826DE37560053B9ED /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22084726DE37560053B9ED /* ViewController.swift */; };
-		3A22084B26DE37560053B9ED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084926DE37560053B9ED /* Main.storyboard */; };
+		3A22084B26DE37560053B9ED /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084926DE37560053B9ED /* Feed.storyboard */; };
 		3A22084D26DE37570053B9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084C26DE37570053B9ED /* Assets.xcassets */; };
 		3A22085026DE37570053B9ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084E26DE37570053B9ED /* LaunchScreen.storyboard */; };
+		3ABA7C5326DE56A5006A524A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5226DE56A5006A524A /* Coordinator.swift */; };
+		3ABA7C5726DE5927006A524A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5626DE5927006A524A /* AppCoordinator.swift */; };
+		3ABA7C5B26DE71BE006A524A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5A26DE71BE006A524A /* FeedViewController.swift */; };
+		3ABA7C5F26DE7B08006A524A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5E26DE7B08006A524A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		3A22084026DE37560053B9ED /* Inbyeolgram-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbyeolgram-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A22084326DE37560053B9ED /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3A22084526DE37560053B9ED /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3A22084726DE37560053B9ED /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		3A22084A26DE37560053B9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3A22084A26DE37560053B9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Feed.storyboard; sourceTree = "<group>"; };
 		3A22084C26DE37570053B9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A22084F26DE37570053B9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A22085126DE37570053B9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3ABA7C5226DE56A5006A524A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		3ABA7C5626DE5927006A524A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		3ABA7C5A26DE71BE006A524A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		3ABA7C5E26DE7B08006A524A /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +62,58 @@
 		3A22084226DE37560053B9ED /* Inbyeolgram-clone */ = {
 			isa = PBXGroup;
 			children = (
-				3A22084326DE37560053B9ED /* AppDelegate.swift */,
-				3A22084526DE37560053B9ED /* SceneDelegate.swift */,
-				3A22084726DE37560053B9ED /* ViewController.swift */,
-				3A22084926DE37560053B9ED /* Main.storyboard */,
-				3A22084C26DE37570053B9ED /* Assets.xcassets */,
-				3A22084E26DE37570053B9ED /* LaunchScreen.storyboard */,
-				3A22085126DE37570053B9ED /* Info.plist */,
+				3ABA7C6326DE7D82006A524A /* Application */,
+				3ABA7C6226DE7D71006A524A /* Storyboard */,
+				3ABA7C6426DE7D8D006A524A /* SupportingFiles */,
+				3ABA7C6126DE7D62006A524A /* Coordinator */,
+				3ABA7C6026DE7D51006A524A /* ViewController */,
 			);
 			path = "Inbyeolgram-clone";
+			sourceTree = "<group>";
+		};
+		3ABA7C6026DE7D51006A524A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA7C5A26DE71BE006A524A /* FeedViewController.swift */,
+				3ABA7C5E26DE7B08006A524A /* TabBarController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		3ABA7C6126DE7D62006A524A /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				3ABA7C5226DE56A5006A524A /* Coordinator.swift */,
+				3ABA7C5626DE5927006A524A /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		3ABA7C6226DE7D71006A524A /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3A22084926DE37560053B9ED /* Feed.storyboard */,
+				3A22084E26DE37570053B9ED /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3ABA7C6326DE7D82006A524A /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				3A22084326DE37560053B9ED /* AppDelegate.swift */,
+				3A22084526DE37560053B9ED /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		3ABA7C6426DE7D8D006A524A /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				3A22084C26DE37570053B9ED /* Assets.xcassets */,
+				3A22085126DE37570053B9ED /* Info.plist */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,7 +175,7 @@
 			files = (
 				3A22085026DE37570053B9ED /* LaunchScreen.storyboard in Resources */,
 				3A22084D26DE37570053B9ED /* Assets.xcassets in Resources */,
-				3A22084B26DE37560053B9ED /* Main.storyboard in Resources */,
+				3A22084B26DE37560053B9ED /* Feed.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +186,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A22084826DE37560053B9ED /* ViewController.swift in Sources */,
+				3ABA7C5B26DE71BE006A524A /* FeedViewController.swift in Sources */,
+				3ABA7C5326DE56A5006A524A /* Coordinator.swift in Sources */,
+				3ABA7C5726DE5927006A524A /* AppCoordinator.swift in Sources */,
+				3ABA7C5F26DE7B08006A524A /* TabBarController.swift in Sources */,
 				3A22084426DE37560053B9ED /* AppDelegate.swift in Sources */,
 				3A22084626DE37560053B9ED /* SceneDelegate.swift in Sources */,
 			);
@@ -146,12 +198,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3A22084926DE37560053B9ED /* Main.storyboard */ = {
+		3A22084926DE37560053B9ED /* Feed.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3A22084A26DE37560053B9ED /* Base */,
 			);
-			name = Main.storyboard;
+			name = Feed.storyboard;
 			sourceTree = "<group>";
 		};
 		3A22084E26DE37570053B9ED /* LaunchScreen.storyboard */ = {
@@ -287,7 +339,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Inbyeolgram-clone/Info.plist";
+				DEVELOPMENT_TEAM = 949577ZGT6;
+				INFOPLIST_FILE = "Inbyeolgram-clone/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,7 +358,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Inbyeolgram-clone/Info.plist";
+				DEVELOPMENT_TEAM = 949577ZGT6;
+				INFOPLIST_FILE = "Inbyeolgram-clone/SupportingFiles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
