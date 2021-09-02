@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,11 +12,49 @@
 		3A22084B26DE37560053B9ED /* Feed.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084926DE37560053B9ED /* Feed.storyboard */; };
 		3A22084D26DE37570053B9ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084C26DE37570053B9ED /* Assets.xcassets */; };
 		3A22085026DE37570053B9ED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A22084E26DE37570053B9ED /* LaunchScreen.storyboard */; };
+		3A2AF0CA26E0EDD1001EAFA5 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AF0C926E0EDD1001EAFA5 /* FeedCell.swift */; };
+		3A2AF0CC26E0EDE7001EAFA5 /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2AF0CB26E0EDE7001EAFA5 /* FeedCell.xib */; };
+		3A2AF0D526E10011001EAFA5 /* RxCocoa.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0CE26E0FBA8001EAFA5 /* RxCocoa.xcframework */; };
+		3A2AF0D626E10011001EAFA5 /* RxCocoa.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0CE26E0FBA8001EAFA5 /* RxCocoa.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2AF0D726E10011001EAFA5 /* RxSwift.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0CF26E0FBA8001EAFA5 /* RxSwift.xcframework */; };
+		3A2AF0D826E10011001EAFA5 /* RxSwift.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0CF26E0FBA8001EAFA5 /* RxSwift.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2AF0DD26E10011001EAFA5 /* RxBlocking.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DA26E10011001EAFA5 /* RxBlocking.xcframework */; };
+		3A2AF0DE26E10011001EAFA5 /* RxBlocking.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DA26E10011001EAFA5 /* RxBlocking.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2AF0DF26E10011001EAFA5 /* RxCocoaRuntime.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DB26E10011001EAFA5 /* RxCocoaRuntime.xcframework */; };
+		3A2AF0E026E10011001EAFA5 /* RxCocoaRuntime.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DB26E10011001EAFA5 /* RxCocoaRuntime.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2AF0E126E10011001EAFA5 /* RxRelay.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DC26E10011001EAFA5 /* RxRelay.xcframework */; };
+		3A2AF0E226E10011001EAFA5 /* RxRelay.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0DC26E10011001EAFA5 /* RxRelay.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3A2AF0E526E10048001EAFA5 /* FeedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AF0E426E10048001EAFA5 /* FeedViewModel.swift */; };
+		3A2AF0E726E1007D001EAFA5 /* Feed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AF0E626E1007D001EAFA5 /* Feed.swift */; };
+		3A2AF0EA26E100AA001EAFA5 /* FeedOneImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AF0E926E100AA001EAFA5 /* FeedOneImageCell.swift */; };
+		3A2AF0EC26E100D8001EAFA5 /* FeedOneImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3A2AF0EB26E100D8001EAFA5 /* FeedOneImageCell.xib */; };
+		3A2AF0EF26E103FD001EAFA5 /* FeedDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2AF0EE26E103FD001EAFA5 /* FeedDataSource.swift */; };
+		3A2AF0F126E10431001EAFA5 /* Kingfisher.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0F026E10431001EAFA5 /* Kingfisher.xcframework */; };
+		3A2AF0F226E10431001EAFA5 /* Kingfisher.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3A2AF0F026E10431001EAFA5 /* Kingfisher.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3ABA7C5326DE56A5006A524A /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5226DE56A5006A524A /* Coordinator.swift */; };
 		3ABA7C5726DE5927006A524A /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5626DE5927006A524A /* AppCoordinator.swift */; };
 		3ABA7C5B26DE71BE006A524A /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5A26DE71BE006A524A /* FeedViewController.swift */; };
 		3ABA7C5F26DE7B08006A524A /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABA7C5E26DE7B08006A524A /* TabBarController.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3A2AF0D926E10011001EAFA5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3A2AF0E026E10011001EAFA5 /* RxCocoaRuntime.xcframework in Embed Frameworks */,
+				3A2AF0D626E10011001EAFA5 /* RxCocoa.xcframework in Embed Frameworks */,
+				3A2AF0DE26E10011001EAFA5 /* RxBlocking.xcframework in Embed Frameworks */,
+				3A2AF0F226E10431001EAFA5 /* Kingfisher.xcframework in Embed Frameworks */,
+				3A2AF0E226E10011001EAFA5 /* RxRelay.xcframework in Embed Frameworks */,
+				3A2AF0D826E10011001EAFA5 /* RxSwift.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		3A22084026DE37560053B9ED /* Inbyeolgram-clone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Inbyeolgram-clone.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,6 +64,19 @@
 		3A22084C26DE37570053B9ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A22084F26DE37570053B9ED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A22085126DE37570053B9ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A2AF0C926E0EDD1001EAFA5 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		3A2AF0CB26E0EDE7001EAFA5 /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		3A2AF0CE26E0FBA8001EAFA5 /* RxCocoa.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoa.xcframework; path = Carthage/Build/RxCocoa.xcframework; sourceTree = "<group>"; };
+		3A2AF0CF26E0FBA8001EAFA5 /* RxSwift.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxSwift.xcframework; path = Carthage/Build/RxSwift.xcframework; sourceTree = "<group>"; };
+		3A2AF0DA26E10011001EAFA5 /* RxBlocking.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxBlocking.xcframework; path = Carthage/Build/RxBlocking.xcframework; sourceTree = "<group>"; };
+		3A2AF0DB26E10011001EAFA5 /* RxCocoaRuntime.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxCocoaRuntime.xcframework; path = Carthage/Build/RxCocoaRuntime.xcframework; sourceTree = "<group>"; };
+		3A2AF0DC26E10011001EAFA5 /* RxRelay.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = RxRelay.xcframework; path = Carthage/Build/RxRelay.xcframework; sourceTree = "<group>"; };
+		3A2AF0E426E10048001EAFA5 /* FeedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewModel.swift; sourceTree = "<group>"; };
+		3A2AF0E626E1007D001EAFA5 /* Feed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feed.swift; sourceTree = "<group>"; };
+		3A2AF0E926E100AA001EAFA5 /* FeedOneImageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedOneImageCell.swift; sourceTree = "<group>"; };
+		3A2AF0EB26E100D8001EAFA5 /* FeedOneImageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedOneImageCell.xib; sourceTree = "<group>"; };
+		3A2AF0EE26E103FD001EAFA5 /* FeedDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedDataSource.swift; sourceTree = "<group>"; };
+		3A2AF0F026E10431001EAFA5 /* Kingfisher.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Kingfisher.xcframework; path = Carthage/Build/Kingfisher.xcframework; sourceTree = "<group>"; };
 		3ABA7C5226DE56A5006A524A /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		3ABA7C5626DE5927006A524A /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		3ABA7C5A26DE71BE006A524A /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
@@ -37,6 +88,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2AF0DF26E10011001EAFA5 /* RxCocoaRuntime.xcframework in Frameworks */,
+				3A2AF0D526E10011001EAFA5 /* RxCocoa.xcframework in Frameworks */,
+				3A2AF0DD26E10011001EAFA5 /* RxBlocking.xcframework in Frameworks */,
+				3A2AF0F126E10431001EAFA5 /* Kingfisher.xcframework in Frameworks */,
+				3A2AF0E126E10011001EAFA5 /* RxRelay.xcframework in Frameworks */,
+				3A2AF0D726E10011001EAFA5 /* RxSwift.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +105,7 @@
 			children = (
 				3A22084226DE37560053B9ED /* Inbyeolgram-clone */,
 				3A22084126DE37560053B9ED /* Products */,
+				3A2AF0CD26E0FBA8001EAFA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +120,65 @@
 		3A22084226DE37560053B9ED /* Inbyeolgram-clone */ = {
 			isa = PBXGroup;
 			children = (
+				3A2AF0ED26E103E8001EAFA5 /* DataSource */,
+				3A2AF0E326E1003D001EAFA5 /* ViewModel */,
+				3A2AF0C826E0EDBF001EAFA5 /* Cell */,
 				3ABA7C6326DE7D82006A524A /* Application */,
 				3ABA7C6226DE7D71006A524A /* Storyboard */,
 				3ABA7C6426DE7D8D006A524A /* SupportingFiles */,
 				3ABA7C6126DE7D62006A524A /* Coordinator */,
 				3ABA7C6026DE7D51006A524A /* ViewController */,
+				3A2AF0E826E10082001EAFA5 /* Model */,
 			);
 			path = "Inbyeolgram-clone";
+			sourceTree = "<group>";
+		};
+		3A2AF0C826E0EDBF001EAFA5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				3A2AF0C926E0EDD1001EAFA5 /* FeedCell.swift */,
+				3A2AF0CB26E0EDE7001EAFA5 /* FeedCell.xib */,
+				3A2AF0E926E100AA001EAFA5 /* FeedOneImageCell.swift */,
+				3A2AF0EB26E100D8001EAFA5 /* FeedOneImageCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		3A2AF0CD26E0FBA8001EAFA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3A2AF0F026E10431001EAFA5 /* Kingfisher.xcframework */,
+				3A2AF0DA26E10011001EAFA5 /* RxBlocking.xcframework */,
+				3A2AF0DB26E10011001EAFA5 /* RxCocoaRuntime.xcframework */,
+				3A2AF0DC26E10011001EAFA5 /* RxRelay.xcframework */,
+				3A2AF0CE26E0FBA8001EAFA5 /* RxCocoa.xcframework */,
+				3A2AF0CF26E0FBA8001EAFA5 /* RxSwift.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3A2AF0E326E1003D001EAFA5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				3A2AF0E426E10048001EAFA5 /* FeedViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3A2AF0E826E10082001EAFA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3A2AF0E626E1007D001EAFA5 /* Feed.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3A2AF0ED26E103E8001EAFA5 /* DataSource */ = {
+			isa = PBXGroup;
+			children = (
+				3A2AF0EE26E103FD001EAFA5 /* FeedDataSource.swift */,
+			);
+			path = DataSource;
 			sourceTree = "<group>";
 		};
 		3ABA7C6026DE7D51006A524A /* ViewController */ = {
@@ -126,6 +236,7 @@
 				3A22083C26DE37560053B9ED /* Sources */,
 				3A22083D26DE37560053B9ED /* Frameworks */,
 				3A22083E26DE37560053B9ED /* Resources */,
+				3A2AF0D926E10011001EAFA5 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -173,7 +284,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2AF0EC26E100D8001EAFA5 /* FeedOneImageCell.xib in Resources */,
 				3A22085026DE37570053B9ED /* LaunchScreen.storyboard in Resources */,
+				3A2AF0CC26E0EDE7001EAFA5 /* FeedCell.xib in Resources */,
 				3A22084D26DE37570053B9ED /* Assets.xcassets in Resources */,
 				3A22084B26DE37560053B9ED /* Feed.storyboard in Resources */,
 			);
@@ -186,11 +299,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A2AF0CA26E0EDD1001EAFA5 /* FeedCell.swift in Sources */,
+				3A2AF0E726E1007D001EAFA5 /* Feed.swift in Sources */,
+				3A2AF0EA26E100AA001EAFA5 /* FeedOneImageCell.swift in Sources */,
+				3A2AF0EF26E103FD001EAFA5 /* FeedDataSource.swift in Sources */,
 				3ABA7C5B26DE71BE006A524A /* FeedViewController.swift in Sources */,
 				3ABA7C5326DE56A5006A524A /* Coordinator.swift in Sources */,
 				3ABA7C5726DE5927006A524A /* AppCoordinator.swift in Sources */,
 				3ABA7C5F26DE7B08006A524A /* TabBarController.swift in Sources */,
 				3A22084426DE37560053B9ED /* AppDelegate.swift in Sources */,
+				3A2AF0E526E10048001EAFA5 /* FeedViewModel.swift in Sources */,
 				3A22084626DE37560053B9ED /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
