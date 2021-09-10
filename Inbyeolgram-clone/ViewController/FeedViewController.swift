@@ -19,14 +19,18 @@ class FeedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.register(UINib(nibName: "FeedOneImageCell", bundle: nil), forCellReuseIdentifier: "FeedOneImageCell")
+        tableView.register(UINib(nibName: "FeedOneContentCell", bundle: nil), forCellReuseIdentifier: "FeedOneContentCell")
+        tableView.register(UINib(nibName: "FeedContentsCell", bundle: nil), forCellReuseIdentifier: "FeedContentsCell")
         
-        viewModel.feeds.bind(to: tableView.rx.items(cellIdentifier: "FeedOneImageCell", cellType: FeedOneImageCell.self)) { row, feed, cell in
-            cell.profileImage?.kf.setImage(with: URL(string: feed.profileImage))
-            cell.nameLabel?.text = feed.name
-            cell.mainImage.kf.setImage(with: URL(string: feed.mainImage))
-            cell.contentLabel?.text = feed.contents
+        viewModel.feeds.bind(to: tableView.rx.items){(tableView, row, feed) -> UITableViewCell in
+            if feed.contents.count == 1 {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "FeedOneContentCell") as! FeedOneContentCell
+                cell.setContent(feed: feed)
+                return cell
+            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "FeedContentsCell") as! FeedContentsCell
+            cell.setContent(feed: feed)
+            return cell
         }.disposed(by: disposeBag)
-            
     }
 }

@@ -7,9 +7,14 @@
 
 import Foundation
 
-struct Feed {
-    let profileImage: String
-    let name: String
-    let mainImage: String
-    let contents: String
+struct Feed: Hashable {
+    let idx: Int
+    let profileThumbnail: String
+    let userName: String
+    let description: String
+    let contents: [FeedContent]
+    
+    static func == (lhs: Feed, rhs: Feed) -> Bool {
+        lhs.idx == rhs.idx
+    }
 }
